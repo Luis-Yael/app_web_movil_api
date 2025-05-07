@@ -8,7 +8,7 @@ from django.conf import settings
 class BearerTokenAuthentication(TokenAuthentication):
     keyword = u"Bearer"
 
-
+#Tabla para los datos extra de los usuarios
 class Profiles(models.Model):
     id = models.BigAutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=False, default=None)
